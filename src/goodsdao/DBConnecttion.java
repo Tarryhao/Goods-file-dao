@@ -8,9 +8,9 @@ public class DBConnecttion {
 Connection conn=null;
 public Connection getConnection() throws ClassNotFoundException, SQLException{
 	Class.forName("oracle.jdbc.driver.OracleDriver");
-	// 2.µÃµ½Á¬½Ó
-	// DriverManager.getConnection("Á¬½ÓÐ­Òé", "ÓÃ»§Ãû", "ÃÜÂë");
-	Connection conn = DriverManager.getConnection(
+	// 2.ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½
+	// DriverManager.getConnection("ï¿½ï¿½ï¿½ï¿½Ð­ï¿½ï¿½", "ï¿½Ã»ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½");
+	conn = DriverManager.getConnection(
 			"jdbc:oracle:thin:@127.0.0.1:1521:ORCL", "Study_user", "123456");
 	return conn;
 	
